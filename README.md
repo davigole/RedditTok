@@ -14,7 +14,7 @@ I did **not** come up with this idea. Another user called [Lewis Menelaws](https
 ## Installation 💾
  1. Clone this repository 🐱
  2. Run `pip install -r requirements.txt` 📄
- 3. Run `python master/background.py` to install sample background 📷
+ 3. Run `python install.py` to install sample background 📷
  4. Enjoy! 😊
 
 ## Usage 💻

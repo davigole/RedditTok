@@ -25,18 +25,7 @@ def remove_audio(video: VideoFileClip) -> VideoFileClip:
     return video.without_audio()
 
 # Download sample background video - "Minecraft Relaxing Parkour 34 minutes 50 (lofi, no ads)" by SiswiZz
-def download_sample() -> None:
-    path = '../assets/background'
-    log = create_log()
-
-    if os.path.exists(path + '.mp4'):
-        i = 1
-        while os.path.exists('{} ({}).mp4'.format(path, i)): i += 1
-        path = '{} ({}).mp4'.format(path, i)
-    else:
-        path += '.mp4'
-
-    log.info('Downloading sample background video at {}. This may take a while'.format(path))
+def download_sample(path: str) -> None:
 
     ydl_opts = {
         'outtmpl': path,
@@ -44,6 +33,3 @@ def download_sample() -> None:
     }
     with YoutubeDL(ydl_opts) as ydl:
         ydl.download(BACKGROUND_SAMPLE)
-
-if __name__ == '__main__':
-    download_sample()
