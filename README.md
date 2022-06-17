@@ -19,8 +19,10 @@ I did **not** come up with this idea. Another user called [Lewis Menelaws](https
 
 ## Usage 💻
 To use RedditTok, run:
+
 ```python main.py URL [--path] [--comments] [--background_path] [--background_start] /L /T```
-where
+
+where:
  - `URL`: Reddit URL to get screenshots from
  - `--path`: Path to save final video (default: `output.mp4`)
  - `--comments`: Maximum number of comments in video (default: `5`)
