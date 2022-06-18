@@ -84,7 +84,7 @@ def main(url: str, path: str, comments: int, background_path: str, background_st
 
     # Delete temp folder
     if not t:
-        delete_dir('master/temp')
+        delete_dir('temp')
         log.info('Deleted temp folder')
     
 
