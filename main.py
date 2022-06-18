@@ -42,6 +42,9 @@ def main(url: str, path: str, comments: int, background_path: str, background_st
     data = [title_data] + comments_data
     log.info("Title and comments data found")
 
+    driver.close()
+    driver.quit()
+
     
     # Concatenate audios into one
     final_audio = concatenate_audios([i['audio'] for i in data])
