@@ -77,6 +77,7 @@ def main(url: str, path: str, comments: int, background_path: str, background_st
 
     
     # Export video
+    log.info('The final video has a duration of {} seconds'.format(int(background_video.duration)))
     background_video.write_videofile(path)
     log.info('Exported background_video to {}'.format(path))
     
