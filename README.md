@@ -38,5 +38,5 @@ where:
  - [ ] Change voice
 
 ## Errors 🚨
- - [X] Screenshots are sometimes cut in half (solution: do not start driver window maximized)
+ - [ ] Sometimes the first screenshot is cut in half
  - [ ] Sometimes Selenium can't find dark mode button
