@@ -89,8 +89,11 @@ def main(url: str, path: str, comments: int, background_path: str, background_st
 
     # Delete temp folder
     if not t:
-        delete_dir('temp')
-        log.info('Deleted temp folder')
+        try:
+            delete_dir('temp')
+            log.info('Deleted temp folder')
+        except PermissionError:
+            log.warning('Temp folder cannot be deleted because it is being used by another process')
     
 
 if __name__ == '__main__':
