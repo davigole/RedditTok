@@ -18,6 +18,7 @@ def create_driver(url: str) -> webdriver:
         service=Service(ChromeDriverManager().install()),
         options=options
     )
+    driver.set_window_size(300, driver.get_window_size()["height"])
     driver.get(url)
 
     return driver
